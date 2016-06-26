@@ -9,6 +9,9 @@
         "wp-api/wp-api": "~2.0"
         
     },
+    "config"      : {
+        "vendor-dir": "vendor/"
+    },
     "extra": {
         "wordpress-install-dir": "wp/",
         "installer-paths": {
