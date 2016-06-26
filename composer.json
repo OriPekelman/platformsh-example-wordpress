@@ -2,12 +2,19 @@
     "name": "platform/platform-wordpress-bare",
     "description": "Getting started with WordPress and Platformsh",
     "license": "MIT",
+    "minimum-stability":"beta",
     "require": {
         "johnpbloch/wordpress-core-installer": "~0.2",
-        "johnpbloch/wordpress": "~4.4"
+        "johnpbloch/wordpress": "~4.5",
+        "wp-api/wp-api": "~2.0"
+        
     },
     "extra": {
-        "wordpress-install-dir": "wp"
+        "wordpress-install-dir": "wp/",
+        "installer-paths": {
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "wp-content/themes/{$name}/": ["type:wordpress-theme"]
+        }
     },
     "scripts": {
         "post-install-cmd": [
