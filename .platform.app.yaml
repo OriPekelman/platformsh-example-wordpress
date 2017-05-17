@@ -17,6 +17,7 @@ build:
 # side is in the form `<service name>:<endpoint name>`.
 relationships:
     database: "mysqldb:mysql"
+    elasticsearch: "elasticsearch:elasticsearch"
 
 # The configuration of app when it is exposed to the web.
 web:

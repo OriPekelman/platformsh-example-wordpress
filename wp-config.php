@@ -11,6 +11,7 @@ You would put here your local configuration for example:
 //define('DB_HOST', "127.0.0.1");
 //define('DB_CHARSET', 'utf8');
 //define('DB_COLLATE', '');
+//define( 'EP_HOST', 'http://127.0.0.1:9200' ); // For ElasticPress
 */
 
 } else {
@@ -28,6 +29,8 @@ You would put here your local configuration for example:
     define('DB_HOST', $relationships['database'][0]['host']);
     define('DB_CHARSET', 'utf8');
     define('DB_COLLATE', '');
+
+    define( 'EP_HOST',"http://" . $relationships['elasticsearch'][0]['host'] . ":" . $relationships['elasticsearch'][0]['port'] );
 
     $site_host = $_SERVER['HTTP_HOST'];
     $site_scheme = !empty($_SERVER['https']) ? 'https' : 'http';
