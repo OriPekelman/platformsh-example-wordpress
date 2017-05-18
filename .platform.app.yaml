@@ -9,7 +9,7 @@ type: "php:7.1"
 
 # Configuration of the build of the application.
 build:
-    flavor: none
+    flavor: composer
 
 # The relationships of the application with services or other applications.
 # The left-hand side is the name of the relationship as it will be exposed
@@ -45,8 +45,3 @@ dependencies:
 mounts:
     "/wp/wp-content/uploads": "shared:files/uploads"
     "/wp/wp-content/cache": "shared:files/cache"
-
-# The hooks that will be performed when the package is deployed.
-hooks:
-    build: |
-      composer install
