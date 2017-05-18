@@ -5,7 +5,7 @@
 
 mysqldb:
     type:  mysql:10.1
-    disk: 1024
+    disk: 2048
 elasticsearch:
     type: elasticsearch:5.2
     disk: 1024

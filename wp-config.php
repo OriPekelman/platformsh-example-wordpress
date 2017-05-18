@@ -1,7 +1,4 @@
 <?php
-
-
-
 if (empty($_ENV['PLATFORM_RELATIONSHIPS'])){
 /*
 You would put here your local configuration for example:
