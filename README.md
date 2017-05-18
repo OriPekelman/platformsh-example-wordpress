@@ -1,4 +1,4 @@
-# WordPress template for Platform.sh
+# WordPress / ElasticPress template for Platform.sh
 
 This project provides a starter kit for WordPress projects hosted on Platform.sh. It is primarily an example, although could be used as the starting point for a real project.  It is built using Composer, via the popular <a href="https://github.com/johnpbloch/wordpress">johnpbloch/wordpress</a> script.
 

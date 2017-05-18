@@ -45,3 +45,11 @@ dependencies:
 mounts:
     "/wp/wp-content/uploads": "shared:files/uploads"
     "/wp/wp-content/cache": "shared:files/cache"
+hooks:
+    build: |
+      mkdir -p wp/wp-content/themes
+      mkdir -p wp/wp-content/plugins
+      mkdir -p wp/wp-content/languages
+      cp -r plugins/* wp/wp-content/plugins/
+      cp -r themes/* wp/wp-content/themes/
+      cp -r languages/* wp/wp-content/languages/
