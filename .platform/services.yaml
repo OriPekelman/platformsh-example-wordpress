@@ -9,3 +9,5 @@ mysqldb:
 elasticsearch:
     type: elasticsearch:5.2
     disk: 1024
+cache:
+    type: redis:3.0

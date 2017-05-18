@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4339e9e522ea9e5f45995c3ede059964",
-    "content-hash": "1edf26dfd379df16c470c21b36dfd76b",
+    "hash": "ccd9812a6e9dfe7e5a56f39613796077",
+    "content-hash": "1d13d7ad7dcf40350957744e81f27988",
     "packages": [
         {
             "name": "composer/installers",
@@ -225,6 +225,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/elasticpress/"
+        },
+        {
+            "name": "wpackagist-plugin/redis-object-cache",
+            "version": "1.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/redis-object-cache/",
+                "reference": "tags/1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/redis-object-cache.1.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/redis-object-cache/"
         }
     ],
     "packages-dev": [],

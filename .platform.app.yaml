@@ -18,6 +18,7 @@ build:
 relationships:
     database: "mysqldb:mysql"
     elasticsearch: "elasticsearch:elasticsearch"
+    cache: "cache:redis"
 
 # The configuration of app when it is exposed to the web.
 web:
@@ -53,3 +54,4 @@ hooks:
       cp -r plugins/* wp/wp-content/plugins/
       cp -r themes/* wp/wp-content/themes/
       cp -r languages/* wp/wp-content/languages/
+      ln -s wp/wp-content/plugins/redis-object-cache/object-cache.php wp/wp-content/object-cache.php
