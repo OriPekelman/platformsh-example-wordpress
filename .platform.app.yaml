@@ -9,7 +9,7 @@ type: "php:7.1"
 
 # Configuration of the build of the application.
 build:
-    flavor: composer
+    flavor: none
 
 # The relationships of the application with services or other applications.
 # The left-hand side is the name of the relationship as it will be exposed
@@ -49,6 +49,7 @@ mounts:
 # The hooks that will be performed when the package is deployed.
 hooks:
     build: |
+      composer install
       mkdir -p /app/wp/wp-content/plugins/ /app/wp/wp-content/plugins/ /app/wp/wp-content/themes/ /app/wp/wp-content/languages/
       rsync -uar --delete-after /app/plugins/ /app/wp/wp-content/plugins/ 
       rsync -uar --delete-after /app/themes/ /app/wp/wp-content/themes/
