@@ -48,6 +48,9 @@ You would put here your local configuration for example:
     define('WP_REDIS_BACKEND_HOST', $relationships['cache'][0]['host']);
     define('WP_REDIS_BACKEND_PORT', $relationships['cache'][0]['port']);
 
+    //Super Cache
+    define('WPCACHEHOME', "/app/wp/wp-content/plugins/wp-super-cache/");
+
     // Check whether a route is defined for this application in the Platform.sh routes.
     // Use it as the site hostname if so (it is not ideal to trust HTTP_HOST).
     if (isset($_ENV['PLATFORM_ROUTES'])) {
