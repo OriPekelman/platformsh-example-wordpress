@@ -12,7 +12,8 @@
         "johnpbloch/wordpress-core-installer": "~0.2",
         "johnpbloch/wordpress-core": "~4.7",
         "wpackagist-plugin/elasticpress": "~2.2",
-        "wpackagist-plugin/redis-object-cache": "1.0"
+        "wpackagist-plugin/redis-object-cache": "~1.0",
+        "wpackagist-plugin/wp-super-cache": "~1.4.9"
     },
     "extra": {
         "wordpress-install-dir": "wp",

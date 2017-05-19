@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ccd9812a6e9dfe7e5a56f39613796077",
-    "content-hash": "1d13d7ad7dcf40350957744e81f27988",
+    "hash": "33b386144a23095a9efb7812d0429bf8",
+    "content-hash": "a8f2861f2cdcb18332867248b535cd41",
     "packages": [
         {
             "name": "composer/installers",
@@ -245,6 +245,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/redis-object-cache/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-super-cache",
+            "version": "1.4.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-super-cache/",
+                "reference": "tags/1.4.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-super-cache.1.4.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-super-cache/"
         }
     ],
     "packages-dev": [],
