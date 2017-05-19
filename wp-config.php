@@ -45,8 +45,8 @@ You would put here your local configuration for example:
     
     //WP-Redis Config
     define('WP_CACHE', true);
-    define('WP_REDIS_HOST', $relationships['cache'][0]['host']);
-    define('WP_REDIS_PORT', $relationships['cache'][0]['port']);
+    define('WP_REDIS_BACKEND_HOST', $relationships['cache'][0]['host']);
+    define('WP_REDIS_BACKEND_PORT', $relationships['cache'][0]['port']);
 
     // Check whether a route is defined for this application in the Platform.sh routes.
     // Use it as the site hostname if so (it is not ideal to trust HTTP_HOST).
