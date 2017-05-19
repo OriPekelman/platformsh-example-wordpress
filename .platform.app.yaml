@@ -56,4 +56,5 @@ hooks:
       cp -r plugins/* wp/wp-content/plugins/
       cp -r themes/* wp/wp-content/themes/
       cp -r languages/* wp/wp-content/languages/
+      cp -r wp-content/* wp/wp-content/
       mv wp/wp-content/plugins/redis-object-cache/object-cache.php wp/wp-content/object-cache.php
